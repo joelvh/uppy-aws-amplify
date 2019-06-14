@@ -9,11 +9,12 @@ Supports Uppy v1.0
 ## Example
 
 ```es6
-const Uppy = require('@uppy/core')
-const AwsS3 = require('uppy-aws-amplify')
+import Uppy from '@uppy/core'
+import AwsAmplify from 'uppy-aws-amplify'
 import { Storage } from 'aws-amplify'
 
 const uppy = Uppy()
+
 uppy.use(AwsAmplify, {
   // configured AWS Amplify Storage reference
   // with `get` and `put` methods
