@@ -4,8 +4,6 @@ The AWS Amplify Storage (S3) plugin for [uppy](https://uppy.io) which can be use
 
 This package uses `Storage` from the `aws-amplify` package under the hood, which will use the default configuration you're using for AWS Amplify in your app.
 
-Supports Uppy v1.0
-
 ## Example
 
 ```es6
