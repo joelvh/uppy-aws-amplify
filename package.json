@@ -1,0 +1,15 @@
+{
+  "name": "uppy-aws-amplify",
+  "version": "1.0.0",
+  "description": "Upload to AWS Amplify Storage (S3) with Uppy",
+  "main": "index.js",
+  "repository": "https://github.com/joelvh/uppy-aws-amplify",
+  "author": "Joel Van Horn",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@uppy/core": "^0.30",
+    "aws-amplify": "^1.0",
+    "uppy": "^0.30"
+  }
+}
