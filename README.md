@@ -1,8 +1,10 @@
 # uppy-aws-amplify
 
-The AWS Amplify Storage (S3) plugin can be used to upload files directly to an S3 bucket using an AWS Amplify  session.
+The AWS Amplify Storage (S3) plugin for [uppy](https://uppy.io) which can be used to upload files directly to an S3 bucket using an AWS Amplify session.
 
 This package uses `Storage` from the `aws-amplify` package under the hood, which will use the default configuration you're using for AWS Amplify in your app.
+
+Supports Uppy v0.30.5
 
 ## Example
 
