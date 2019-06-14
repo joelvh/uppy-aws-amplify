@@ -2,7 +2,6 @@ import { Plugin } from '@uppy/core'
 import Translator from '@uppy/utils/lib/Translator'
 import limitPromises from '@uppy/utils/lib/limitPromises'
 import settle from '@uppy/utils/lib/settle'
-import { Storage } from 'aws-amplify'
 
 export default class AwsAmplify extends Plugin {
   constructor (uppy, opts) {
@@ -19,6 +18,9 @@ export default class AwsAmplify extends Plugin {
     }
 
     const defaultOptions = {
+      // AWS Amplify `Storage` reference
+      storage: null, // { put(), get() }
+      getOptions: { download: false },
       limit: 0,
       getUploadParameters: this.getUploadParameters.bind(this),
       locale: defaultLocale
@@ -87,7 +89,9 @@ export default class AwsAmplify extends Plugin {
   handleFileUpload (filename, file, position, total) {
     this.uppy.log(`[AwsAmplify] Uploading ${position} of ${total}`)
 
-    return Storage.put(filename, file.data, {
+    const { storage, getOptions } = this.opts
+
+    return storage.put(filename, file.data, {
       contentType: file.type,
       progressCallback (progress) {
         if (!this.uppy.getFile(file.id)) {
@@ -101,7 +105,7 @@ export default class AwsAmplify extends Plugin {
       }
     })
       .then(body => {
-        return Storage.get(body.key, { download: false })
+        return storage.get(body.key, getOptions)
           .then(uploadURL => {
             this.uppy.emit('upload-success', file, {
               body,

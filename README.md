@@ -9,10 +9,18 @@ This package uses `Storage` from the `aws-amplify` package under the hood, which
 ```es6
 const Uppy = require('@uppy/core')
 const AwsS3 = require('uppy-aws-amplify')
+import { Storage } from 'aws-amplify'
 
 const uppy = Uppy()
 uppy.use(AwsAmplify, {
-  limit: 2,
+  // configured AWS Amplify Storage reference
+  // with `get` and `put` methods
+  storage: Storage,
+  // default options passed to `Storage.get(...)`
+  getOptions: {
+    download: false
+  },
+  limit: 4,
   async getUploadParameters (file) {
     return {
       // Example: to avoid filename conflicts

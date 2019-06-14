@@ -9,7 +9,6 @@
   "private": false,
   "dependencies": {
     "@uppy/core": "^0.30",
-    "aws-amplify": "^1.0",
     "uppy": "^0.30"
   }
 }
