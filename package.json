@@ -1,6 +1,6 @@
 {
   "name": "uppy-aws-amplify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Upload to AWS Amplify Storage (S3) with Uppy",
   "main": "index.js",
   "repository": "https://github.com/joelvh/uppy-aws-amplify",
