@@ -704,10 +704,17 @@
   resolved "https://registry.yarnpkg.com/@uppy/store-default/-/store-default-1.1.0.tgz#c4ded532ed38d13ca955962edbffe58ecd9abb7e"
   integrity sha512-xCnLDnQ9P42vGV5Q+f9TK/IdRFhZDwBpuAqwJtywPLdbN3sfVsf7uTTUn7ZcWs/jGs0rC/UgKnvIco1Kh7zpWg==
 
-"@uppy/utils@1.1.0", "@uppy/utils@^1.0":
+"@uppy/utils@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@uppy/utils/-/utils-1.1.0.tgz#781e8667563cb35e343560fbaceb4b37c61edb8c"
   integrity sha512-S9uZ4fMnUDbuIxjqsLSCow72g7vdXD9/pwHNsjIqA5AHGHUbPBAGGFbor7YanZ6NZYyE5D0KdVgzAiH6SFLenw==
+  dependencies:
+    lodash.throttle "^4.1.1"
+
+"@uppy/utils@^2.1":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@uppy/utils/-/utils-2.1.0.tgz#2f8c20288906f05310e52c6b681715ec25f2bd68"
+  integrity sha512-poNKSxx6g2h17uPi7P+EV0MvIDl15peh7m0RI26c73v47Kln8C1Th94erqMSPEbsmf37/3bz1TjABJUdMhLaDw==
   dependencies:
     lodash.throttle "^4.1.1"
 
