@@ -2,13 +2,45 @@
   "name": "uppy-aws-amplify",
   "version": "1.0.3",
   "description": "Upload to AWS Amplify Storage (S3) with Uppy",
-  "main": "index.js",
-  "repository": "https://github.com/joelvh/uppy-aws-amplify",
+  "main": "dist/index.js",
+  "private": false,
   "author": "Joel Van Horn",
   "license": "MIT",
-  "private": false,
+  "type": "module",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "test": "",
+    "build": "babel src -d dist",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm version patch",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelvh/uppy-aws-amplify.git"
+  },
+  "keywords": [
+    "node",
+    "http",
+    "request",
+    "router",
+    "path"
+  ],
+  "bugs": {
+    "url": "https://github.com/joelvh/custom-router/issues"
+  },
+  "homepage": "https://github.com/joelvh/custom-router#readme",
   "dependencies": {
     "@uppy/core": "^1.0",
     "@uppy/utils": "^1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "devolution": "^1.1.2"
   }
 }
