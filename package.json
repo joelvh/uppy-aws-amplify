@@ -23,16 +23,17 @@
     "url": "git+https://github.com/joelvh/uppy-aws-amplify.git"
   },
   "keywords": [
-    "node",
-    "http",
-    "request",
-    "router",
-    "path"
+    "upload",
+    "uppy",
+    "aws",
+    "amplify",
+    "aws-amplify",
+    "s3"
   ],
   "bugs": {
-    "url": "https://github.com/joelvh/custom-router/issues"
+    "url": "https://github.com/joelvh/uppy-aws-amplify/issues"
   },
-  "homepage": "https://github.com/joelvh/custom-router#readme",
+  "homepage": "https://github.com/joelvh/uppy-aws-amplify#readme",
   "dependencies": {
     "@uppy/core": "^1.0",
     "@uppy/utils": "^1.0"
