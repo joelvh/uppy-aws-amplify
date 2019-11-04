@@ -1,0 +1,14 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "esmodules": true
+        },
+        "useBuiltIns": "entry"
+      }
+    ]
+  ],
+  "plugins": ["@babel/plugin-proposal-class-properties"]
+}

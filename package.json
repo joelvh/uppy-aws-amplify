@@ -15,7 +15,7 @@
     "build": "babel src -d dist",
     "prepare": "npm run build",
     "prepublishOnly": "npm version patch",
-    "version": "git add -A src",
+    "version": "git add -A",
     "postversion": "git push && git push --tags"
   },
   "repository": {
@@ -40,6 +40,7 @@
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "devolution": "^1.1.2"
   }
