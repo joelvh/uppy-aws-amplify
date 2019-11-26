@@ -43,6 +43,6 @@
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "devolution": "^1.1.2"
+    "devolution": "^2.1.0"
   }
 }
