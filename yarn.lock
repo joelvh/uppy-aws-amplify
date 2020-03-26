@@ -686,28 +686,34 @@
     "true-case-path" "^1.0.3"
 
 "@uppy/core@^1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@uppy/core/-/core-1.1.0.tgz#7f7b233150ab02084225eee18f1267d636e6680b"
-  integrity sha512-lsYqni4CLdxblboYMYVaLlQ/zW0QjheCkWI6q4nJy+XnsiIqq+mZ1j4fJ9KsHaiP929GL35FowOVe0iOS2/OuA==
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@uppy/core/-/core-1.9.0.tgz#3acfdee010b06eee9d9e0a09ba6b2f2985dc7d27"
+  integrity sha512-RF9rP+2s7Pi9V8xoYDtwSKOB8ubTdl6DHMDUDsUITDt44Z/diDsVcY4ay/vwwTqRUiyh+rXA+c+Z2AkC1A3wjg==
   dependencies:
-    "@uppy/store-default" "1.1.0"
-    "@uppy/utils" "1.1.0"
+    "@uppy/store-default" "^1.2.1"
+    "@uppy/utils" "^2.3.0"
     cuid "^2.1.1"
     lodash.throttle "^4.1.1"
     mime-match "^1.0.2"
     namespace-emitter "^2.0.1"
     preact "8.2.9"
-    prettier-bytes "^1.0.4"
 
-"@uppy/store-default@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@uppy/store-default/-/store-default-1.1.0.tgz#c4ded532ed38d13ca955962edbffe58ecd9abb7e"
-  integrity sha512-xCnLDnQ9P42vGV5Q+f9TK/IdRFhZDwBpuAqwJtywPLdbN3sfVsf7uTTUn7ZcWs/jGs0rC/UgKnvIco1Kh7zpWg==
+"@uppy/store-default@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@uppy/store-default/-/store-default-1.2.1.tgz#4f6f1815292388bc2fd6da2655a3ae1133598d5c"
+  integrity sha512-B7iKa9CMLTPgSu1lHQX+Z82NgxoBrzWfZg9WbZnvoJRHnoiwu8A3EFXPLq0OEslvJndBD4xPgUms0BPt4WbnWw==
 
-"@uppy/utils@1.1.0", "@uppy/utils@^1.0":
+"@uppy/utils@^1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@uppy/utils/-/utils-1.1.0.tgz#781e8667563cb35e343560fbaceb4b37c61edb8c"
   integrity sha512-S9uZ4fMnUDbuIxjqsLSCow72g7vdXD9/pwHNsjIqA5AHGHUbPBAGGFbor7YanZ6NZYyE5D0KdVgzAiH6SFLenw==
+  dependencies:
+    lodash.throttle "^4.1.1"
+
+"@uppy/utils@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@uppy/utils/-/utils-2.3.0.tgz#71d5e62feeebef0b87825bedafc27c951f5a91a3"
+  integrity sha512-wnZUy0kZTVLQ9xPQaFEdmaPwDBcwAsAt6Q3hvu2QUsAHeV0evOLzLK9YuoRcSPOWU2UF9GlUtle6ZibBf4bsGg==
   dependencies:
     lodash.throttle "^4.1.1"
 
@@ -2893,11 +2899,6 @@ preact@8.2.9:
   version "8.2.9"
   resolved "https://registry.yarnpkg.com/preact/-/preact-8.2.9.tgz#813ba9dd45e5d97c5ea0d6c86d375b3be711cc40"
   integrity sha512-ThuGXBmJS3VsT+jIP+eQufD3L8pRw/PY3FoCys6O9Pu6aF12Pn9zAJDX99TfwRAFOCEKm/P0lwiPTbqKMJp0fA==
-
-prettier-bytes@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/prettier-bytes/-/prettier-bytes-1.0.4.tgz#994b02aa46f699c50b6257b5faaa7fe2557e62d6"
-  integrity sha1-mUsCqkb2mcULYle1+qp/4lV+YtY=
 
 private@^0.1.6:
   version "0.1.8"
